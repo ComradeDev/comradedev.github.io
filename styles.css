@@ -23,6 +23,10 @@ p {
     font-family: 'Arial', sans-serif;
 }
 
+body {
+    background-color: linear-gradient(to right, #000000 0%, #a4ffa4 100%);
+}
+
 /* Banner styles */
 .banner {
     width: 100%;
