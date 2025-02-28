@@ -24,7 +24,8 @@ p {
 }
 
 body {
-    background-color: linear-gradient(to right, #000000 0%, #a4ffa4 100%);
+    background-color: #383838;
+    padding-top: 50px;
 }
 
 /* Banner styles */
