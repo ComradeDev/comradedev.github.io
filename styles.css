@@ -33,7 +33,7 @@ body {
     background-color: #4CAF50; /* Green background */
     color: white; /* White text */
     text-align: center; /* Centered text */
-    padding: 10px 0; /* Padding */
+    padding: 0px 0; /* Padding */
     position: fixed; /* Fixed position */
     top: 0; /* Stay at the top */
     left: 0;
