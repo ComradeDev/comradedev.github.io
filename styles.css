@@ -14,10 +14,6 @@ h2:nth-of-type(2) {
     color: red;
 }
 
-p {
-    font-family: 'Arial', sans-serif;
-}
-
 img {
     width: 200px;
     height: auto;
@@ -26,10 +22,10 @@ img {
 /* Banner styles */
 .banner {
     width: 100%;
-    background-color: #000000; /* Green background */
-    color: rgb(35, 186, 33); /* White text */
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
     text-align: center; /* Centered text */
-    /* padding: 10px 0; /* Padding */
+    padding: 10px 0; /* Padding */
     position: fixed; /* Fixed position */
     top: 0; /* Stay at the top */
     left: 0;
