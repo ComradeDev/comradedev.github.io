@@ -1,10 +1,25 @@
 h1 {
+    text-align: left;
+    padding-left: 3%;
     font-family: 'Arial', sans-serif;
     color: rgb(255, 255, 255)
 }
 
 h2 {
     font-family: 'Arial', sans-serif;
+    color: rgb(255, 255, 255)
+}
+
+.h2-container {
+    display: flex;
+    gap: 40px;
+    padding-right: 3%;
+}
+
+.h2-container h2 {
+    text-align: right;
+    font-family: 'Arial', sans-serif;
+    color: rgb(255, 255, 255);
 }
 
 p:first-of-type {
@@ -22,21 +37,24 @@ img {
 }
 
 p {
+    padding-top: 1%;
     font-family: 'Arial', sans-serif;
 }
 
 body {
-    background-color: #383838;
+    background-color: #6ddcfd;
     padding-top: 50px;
 }
 
 /* Banner styles */
 .banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     width: 100%;
     background-color: #4CAF50; /* Green background */
     color: white; /* White text */
-    text-align: center; /* Centered text */
-    padding: 0px 0; /* Padding */
+    padding: 0px 20px; /* Padding */
     position: fixed; /* Fixed position */
     top: 0; /* Stay at the top */
     left: 0;
@@ -48,3 +66,5 @@ body {
 body {
     padding-top: 50px; /* Adjust based on the banner height */
 }
+
+

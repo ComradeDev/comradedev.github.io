@@ -1,0 +1,48 @@
+body {
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+.login, .submit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border: 1px solid #cccccc00; /* Optional: border */
+    border-radius: 5px; /* Optional: rounded corners */
+    background-color: #00ccff; /* Optional: background color */
+    width: 80%; /* Adjust width as needed */
+    max-width: 400px; /* Optional: maximum width */
+    margin-bottom: 20px; /* Add space below the containers */
+}
+
+.login input[type="password"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 100%; /* Adjust width as needed */
+    box-sizing: border-box; /* Ensure padding is included in the width */
+}
+
+.submit button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50; /* Button background color */
+    color: white; /* Button text color */
+    cursor: pointer;
+    width: 100%; /* Adjust width as needed */
+    box-sizing: border-box; /* Ensure padding is included in the width */
+}
