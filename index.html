@@ -21,9 +21,10 @@
             const username = document.getElementById('username').value;
             const password = document.getElementById('password').value;
             const validCredentials = [
-                { username: 'user1', password: 'password1' },
-                { username: 'user2', password: 'password2' },
-                { username: 'user3', password: 'password3' }
+                { username: 'sam', password: 'imanadmin' },
+                { username: 'noah', password: '!' },
+                { username: 'alex', password: ':)' },
+                { username: 'dylan', password: '?' }
             ];
 
             const isValid = validCredentials.some(cred => cred.username === username && cred.password === password);
