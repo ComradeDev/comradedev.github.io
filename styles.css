@@ -42,7 +42,7 @@ p {
 }
 
 body {
-    background-color: #6ddcfd;
+    background: linear-gradient(to right, #047b00, #000000);
     padding-top: 50px;
 }
 
