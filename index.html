@@ -8,19 +8,27 @@
     <link rel="icon" href="apple-touch-icon" type="image/x-icon">
 </head>
 <body>
-    <h1>Password Required For Access</h1>
+    <h1>Username and Password Required For Access</h1>
     <div class="login">
-        <input type="password" id="password" name="password" placeholder="Enter the password">
+        <input type="username" id="username" name="username" placeholder="Enter your username">
+        <input type="password" id="password" name="password" placeholder="Enter your password">
     </div>
     <div class="submit">
         <button onclick="checkPassword()">Submit</button>
-    </div>>
+    </div>
     <script>
         function checkPassword() {
+            const username = document.getElementById('username').value;
             const password = document.getElementById('password').value;
-            const correctPassword = 'test'; // Replace with your actual password
+            const validCredentials = [
+                { username: 'user1', password: 'password1' },
+                { username: 'user2', password: 'password2' },
+                { username: 'user3', password: 'password3' }
+            ];
 
-            if (password === correctPassword) {
+            const isValid = validCredentials.some(cred => cred.username === username && cred.password === password);
+
+            if (isValid) {
                 window.location.href = 'home.html';
             } else {
                 const loginDiv = document.querySelector('.login');

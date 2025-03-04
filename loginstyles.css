@@ -36,6 +36,15 @@ h1 {
     box-sizing: border-box; /* Ensure padding is included in the width */
 }
 
+.login input[type="username"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 100%; /* Adjust width as needed */
+    box-sizing: border-box; /* Ensure padding is included in the width */
+    margin-bottom: 5%;
+}
+
 .submit button {
     padding: 10px 20px;
     border: none;
@@ -46,3 +55,4 @@ h1 {
     width: 100%; /* Adjust width as needed */
     box-sizing: border-box; /* Ensure padding is included in the width */
 }
+
