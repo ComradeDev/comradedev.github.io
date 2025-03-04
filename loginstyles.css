@@ -14,15 +14,17 @@ h1 {
     color: rgb(255, 255, 255);
 }
 
+
+
 .login, .submit {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 20px;
-    border: 1px solid #cccccc00; /* Optional: border */
-    border-radius: 5px; /* Optional: rounded corners */
-    background-color: #00ccff; /* Optional: background color */
+    border: 0px solid #cccccc00; /* Optional: border */
+    border-radius: 10px; /* Optional: rounded corners */
+    background: linear-gradient(to left, #006420, #3d3d3d91); /* Background color gradient */
     width: 80%; /* Adjust width as needed */
     max-width: 400px; /* Optional: maximum width */
     margin-bottom: 20px; /* Add space below the containers */
@@ -34,6 +36,7 @@ h1 {
     border-radius: 5px;
     width: 100%; /* Adjust width as needed */
     box-sizing: border-box; /* Ensure padding is included in the width */
+    background-color: #ffffff;
 }
 
 .login input[type="username"] {
@@ -43,6 +46,7 @@ h1 {
     width: 100%; /* Adjust width as needed */
     box-sizing: border-box; /* Ensure padding is included in the width */
     margin-bottom: 5%;
+    background-color: #ffffff;
 }
 
 .submit button {
@@ -50,9 +54,13 @@ h1 {
     border: none;
     border-radius: 5px;
     background-color: #4CAF50; /* Button background color */
-    color: white; /* Button text color */
+    color: rgb(0, 0, 0); /* Button text color */
     cursor: pointer;
     width: 100%; /* Adjust width as needed */
     box-sizing: border-box; /* Ensure padding is included in the width */
 }
 
+.login input[type="password"]::placeholder,
+.login input[type="username"]::placeholder {
+    color: #000000; /* Change this to your desired color */
+}
