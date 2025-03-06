@@ -1,6 +1,13 @@
 body {
-    background: linear-gradient(to right, #047b00, #000000);
-    padding-top: 50px; /* Adjust based on the banner height */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    background-color: rgb(40, 40, 40);
+    padding-top: 100px; /* Adjust based on the banner height */
+    margin: 0; /* Remove default margin */
+    height: 100vh; /* Full 1viewport height */
+    text-align: center; /* Center all text on the page */
 }
 
 .banner {
@@ -18,13 +25,14 @@ body {
 }
 
 .h2-container h2 {
-    text-align: right;
+    text-align: center; /* Center text */
     font-family: 'Arial', sans-serif;
     color: rgb(255, 255, 255);
 }
 
 .h2-container {
     display: flex;
+    justify-content: center; /* Center horizontally */
     gap: 40px;
     padding-right: 3%;
 }
@@ -34,4 +42,16 @@ h1 {
     padding-left: 3%;
     font-family: 'Arial', sans-serif;
     color: rgb(255, 255, 255)
+}
+
+.request-container {
+    display: flex;
+    flex-direction: column; /* Ensure content inside is stacked vertically */
+    justify-content: center; /* Center the form horizontally */
+    align-items: center; /* Center the form vertically */
+    background: linear-gradient(to right, #046a00, #000000);
+    padding: 20px; /* Padding inside the container */
+    margin: 20px auto; /* Center the container and add margin */
+    width: 45%; /* Adjust the width as needed */
+    border-radius: 20px;
 }
