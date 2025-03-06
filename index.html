@@ -25,11 +25,16 @@
                 { username: 'noah', password: '!' },
                 { username: 'alex', password: ':)' },
                 { username: 'dylan', password: '?' },
-                { username: 'guest', password: 'guest' }
+                { username: 'guest', password: 'guest' },
+                { username: 'zayden', password: '1234' }
             ];
 
             const isValid = validCredentials.some(cred => cred.username === username && cred.password === password);
 
+            if (username === 'zayden' && password === '1234') {
+                window.location.href = 'https://learn.lcps.org/home';
+                return;
+            }
             if (isValid) {
                 window.location.href = 'home/home.html';
             } else {
