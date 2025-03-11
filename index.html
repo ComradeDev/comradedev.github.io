@@ -35,17 +35,17 @@
 
                 const isValid = validCredentials.some(cred => cred.username === username && cred.password === password);
 
-                if (username === 'zayden' && password === '1234') {
-                    window.location.href = 'https://learn.lcps.org/home';
-                    return;
-                }
-                if (isValid) {
-                    window.location.href = 'Home/home.html';
-                } else {
-                    const loginDiv = document.querySelector('.login');
-                    loginDiv.style.backgroundColor = '#ff0000'; // Change background color to red
-                    window.location.href = 'https://learn.lcps.org/home';
-                    return;
+            if (username === 'zayden' && password === '1234') {
+                window.location.href = 'https://learn.lcps.org/home';
+                return;
+            }
+            if (isValid) {
+                window.location.href = 'Home/home.html';
+            } else {
+                const loginDiv = document.querySelector('.login');
+                loginDiv.style.backgroundColor = '#ff0000'; // Change background color to red
+                window.location.href = 'https://learn.lcps.org/home';
+                return;
 
                     // Reset background color after 3 seconds
                     setTimeout(() => {
