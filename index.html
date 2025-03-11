@@ -9,47 +9,51 @@
     <link rel="icon" href="apple-touch-icon" type="image/x-icon">
 </head>
 <body>
-    <h1>Username and Password Required For Access</h1>
-    <div class="login">
-        <input type="username" id="username" name="username" placeholder="Enter your username">
-        <input type="password" id="password" name="password" placeholder="Enter your password">
-    </div>
-    <div class="submit">
-        <button onclick="checkPassword()">Submit</button>
-    </div>
-    <script>
-        function checkPassword() {
-            const username = document.getElementById('username').value;
-            const password = document.getElementById('password').value;
-            const validCredentials = [
-                { username: 'sam', password: 'imanadmin' },
-                { username: 'noah', password: '!' },
-                { username: 'alex', password: ':)' },
-                { username: 'dylan', password: '?' },
-                { username: 'guest', password: 'guest' },
-                { username: 'zayden', password: '1234' }
-            ];
+    <div class="container">
+        <div class="title">
+            <h2>Username and Password Required For Access</h2>
+        </div>
+        <div class="login">
+            <input type="username" id="username" name="username" placeholder="Enter your username">
+            <input type="password" id="password" name="password" placeholder="Enter your password">
+        </div>
+        <div class="submit">
+            <button onclick="checkPassword()">Submit</button>
+        </div>
+        <script>
+            function checkPassword() {
+                const username = document.getElementById('username').value;
+                const password = document.getElementById('password').value;
+                const validCredentials = [
+                    { username: 'sam', password: 'imanadmin' },
+                    { username: 'noah', password: '!' },
+                    { username: 'alex', password: ':)' },
+                    { username: 'dylan', password: '?' },
+                    { username: 'guest', password: 'guest' },
+                    { username: 'zayden', password: '1234' }
+                ];
 
-            const isValid = validCredentials.some(cred => cred.username === username && cred.password === password);
+                const isValid = validCredentials.some(cred => cred.username === username && cred.password === password);
 
-            if (username === 'zayden' && password === '1234') {
-                window.location.href = 'https://learn.lcps.org/home';
-                return;
+                if (username === 'zayden' && password === '1234') {
+                    window.location.href = 'https://learn.lcps.org/home';
+                    return;
+                }
+                if (isValid) {
+                    window.location.href = 'Home/home.html';
+                } else {
+                    const loginDiv = document.querySelector('.login');
+                    loginDiv.style.backgroundColor = '#ff0000'; // Change background color to red
+                    window.location.href = 'https://learn.lcps.org/home';
+                    return;
+
+                    // Reset background color after 3 seconds
+                    setTimeout(() => {
+                        loginDiv.style.backgroundColor = '#00ccff'; // Resst to original color
+                    }, 2000);
+                }
             }
-            if (isValid) {
-                window.location.href = 'Home/home.html';
-            } else {
-                const loginDiv = document.querySelector('.login');
-                loginDiv.style.backgroundColor = '#ff0000'; // Change background color to red
-                window.location.href = 'https://learn.lcps.org/home';
-                return;
-
-                // Reset background color after 3 seconds
-                setTimeout(() => {
-                    loginDiv.style.backgroundColor = '#00ccff'; // Resst to original color
-                }, 2000);
-            }
-        }
-    </script>
+        </script>
+    </div>
 </body>
 </html>
