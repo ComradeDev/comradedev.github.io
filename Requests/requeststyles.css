@@ -7,10 +7,12 @@ body {
     margin: 0; /* Remove default margin */
     height: 100vh; /* Full 1viewport height */
     text-align: center; /* Center all text on the page */
-    background-image: url('https://video.cgtn.com/news/3d67444e774d444e/video/2c5359e8-bd9c-4016-a99d-35c14236dc6d/2c5359e8-bd9c-4016-a99d-35c14236dc6d.jpg');
+    background-image: url('https://th.bing.com/th/id/R.2a3dc307a07583dcd71b4f3916855b5b?rik=2FLnMcgL1SDFNg&pid=ImgRaw&r=0');
     background-position: center; /* Center the background image */
     background-size: cover; /* Ensure the image covers the entire background */
 }
+
+/* https://video.cgtn.com/news/3d67444e774d444e/video/2c5359e8-bd9c-4016-a99d-35c14236dc6d/2c5359e8-bd9c-4016-a99d-35c14236dc6d.jpg */
 
 .banner {
     display: flex;

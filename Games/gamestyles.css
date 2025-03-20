@@ -12,6 +12,8 @@ body {
     justify-content: center;
 }
 
+/* https://facts.net/wp-content/uploads/2021/04/tropical-fish-on-a-coral-reef-.jpg */
+
 .banner {
     display: flex;
     align-items: center;
@@ -24,7 +26,7 @@ body {
     top: 0; /* Stay at the top */
     left: 0;
     z-index: 1000; /* Ensure it stays on top */
-    text-decoration: none !important
+    text-decoration: none !important;
 }
 
 .h2-container h2 {
@@ -46,17 +48,49 @@ h2, h1 {
     color: rgb(255, 255, 255)
 }
 
+/*  */
+
 .maincontent {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 20px;
-    border: 1px solid #cccccc00; /* Optional: border */
-    border-radius: 10px; /* Optional: rounded corners */
-    width: 80%; /* Adjust width as needed */
-    max-width: 400px; /* Optional: maximum width */
+    width: 100%;
     background-color: rgba(78, 0, 0, 0); /* Semi-transparent background */
     backdrop-filter: blur(30px); /* Apply blur effect */
     -webkit-backdrop-filter: blur(10px); /* Apply blur effect for Safari */
+    max-width: 1000px;
+    border-radius: 20px;
+}
+
+.gamecontainer {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping if there are too many images */
+    justify-content: center; /* Center the images horizontally */
+    gap: 10px; /* Add space between images */
+}
+
+.small-image {
+    width: 150px; /* Set the desired width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10%; /* Rounded corners */
+}
+
+.game-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.game-item p {
+    margin-top: 10px; /* Add space between the image and the text */
+    font-family: 'Arial', sans-serif;
+    color: white; /* Text color */
+    align-items: center;
+}
+
+.game-item a {
+    text-decoration: none; /* Remove underline from links */
+    color: inherit; /* Inherit text color */
 }
