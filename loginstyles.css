@@ -1,11 +1,15 @@
 body {
-    background-image: url('https://th.bing.com/th/id/R.423d8ea07c0c50f4c938a8a948388abe?rik=8IxGtNRef8iD3Q&riu=http%3a%2f%2fwww.pixelstalk.net%2fwp-content%2fuploads%2f2016%2f05%2fPhoto-new-york-city-wallpapers.jpeg&ehk=CRlGJQMfe%2f9d4ZzPfmOFkeFoO%2fATfNztL%2f0XGXOIJkc%3d&risl=&pid=ImgRaw&r=0');
+    background-image: url('https://images.unsplash.com/photo-1611416517780-eff3a13b0359?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8YmVpamluZ3xlbnwwfHwwfHx8MA%3D%3D');
+    background-position: center; /* Center the background image */
+    background-size: cover; /* Ensure the image covers the entire background */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    padding-top: 50px; /* Adjust based on the banner height */
+    margin: 0; /* Remove default margin */
+    height: 100vh; /* Full viewport height */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
-    margin: 0;
 }
 
 h2 {
